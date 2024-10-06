@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran dan Detail Pendaftar</title>
+    <link rel="stylesheet" href="pendaftaran.css">
+</head>
+
+<body>
+    <div class="container">
+        <Img src="LOGO GYM.jpg" alt="LOGO"/>
+        <h1>Pendaftaran Fitness GYM</h1>
+
+        <div id="form-container">
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telepon">Telepon:</label>
+                    <input type="tel" id="telepon" name="telepon" required>
+                </div>
+                <button type="submit">Daftar</button>
+            </form>
+        </div>
+
+        <div id="details-container" style="display:none;">
+            <h2>Detail Pendaftar</h2>
+            <table>
+                <tr>
+                    <th>Informasi</th>
+                    <th>Detail</th>
+                </tr>
+                <tr>
+                    <td>Nama</td>
+                    <td id="detail-nama"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td id="detail-email"></td>
+                </tr>
+                <tr>
+                    <td>Telepon</td>
+                    <td id="detail-telepon"></td>
+                </tr>
+            </table>
+            <button id="back-button">Kembali</button>
+        </div>
+    </div>
+
+    
